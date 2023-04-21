@@ -8,5 +8,7 @@ trigger AccountTrigger on Account (before update, after update) {
         List<Contact> lstContact = [SELECT id FROM Contact];
         System.debug('CpuTime: ' + Limits.getCpuTime());
         System.debug('Queries: ' + Limits.getQueries());
+        System.debug('CpuTime: ' + Limits.getCpuTime());
+        System.debug('Queries: ' + Limits.getQueries());
     }
 }
